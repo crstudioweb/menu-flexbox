@@ -17,7 +17,7 @@ header {
   background-color: gray;
   color: #fff;
   padding: 15px;
-
+  margin-bottom: 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -25,7 +25,6 @@ header {
 }
 
 header > h1 {
-  border: 1px dotted black;
   flex: 0 0 500px;
   color: #000;
 }
@@ -40,7 +39,6 @@ header > h1 > a:hover {
 }
 
 nav {
-  border: 1px dotted black;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
@@ -65,10 +63,11 @@ nav > a:hover {
 
 main {
   background-color: #fff;
-  margin: 20px;
+  margin: auto;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px 4px #000;
+  width: 80vw;
 }
 
 main > h2 {
@@ -78,4 +77,28 @@ main > h2 {
 main > p {
   text-indent: 20px;
   text-align: justify;
+}
+
+footer {
+  width: 80vw;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#copy {
+  font-size: 1.1em;
+  padding: 10px;
+}
+
+#social > a {
+  display: inline-block;
+  font-size: 2em;
+  color: rgb(2, 2, 165);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#social > a:hover {
+  color: rgb(44, 44, 243);
+  transform: scale(1.2);
 }
